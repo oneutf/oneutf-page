@@ -1,5 +1,7 @@
 <template>
-  <div id="login"></div>
+  <div id="login">
+    <el-row type="flex" justify="center"></el-row>
+  </div>
 </template>
 
 <script>
