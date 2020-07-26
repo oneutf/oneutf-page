@@ -1,5 +1,7 @@
-import sys from "./sys";
+import sys from "@/api/sys";
+import hr from "@/api/hr";
 
 export default {
-  sys
+  sys,
+  hr
 };

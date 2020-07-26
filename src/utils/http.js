@@ -1,7 +1,7 @@
 import axios from "axios";
 import QS from "qs";
 
-// axios.defaults.baseURL = "http:localhost:8080";
+// axios.defaults.baseURL = "/api";
 axios.defaults.timeout = 10000;
 axios.defaults.headers.post["Content-Type"] =
   "application/x-www-form-urlencoded";
@@ -26,6 +26,11 @@ function get(url, params) {
   });
 }
 
+/**
+ *
+ * @param {String} url
+ * @param {Object} params
+ */
 function post(url, params) {
   return new Promise((resolve, reject) => {
     axios
