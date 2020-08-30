@@ -3,8 +3,8 @@ import QS from "qs";
 
 // axios.defaults.baseURL = "/api";
 axios.defaults.timeout = 10000;
-axios.defaults.headers.post["Content-Type"] =
-  "application/x-www-form-urlencoded";
+// axios.defaults.headers.post["Content-Type"] =
+//   "application/x-www-form-urlencoded";
 
 /**
  * get方法，对应get请求
