@@ -30,9 +30,6 @@ export default {
     login() {
       this.$api.sys.user.login(this.user).then(res => {
         console.log(res);
-        if (res.code == 0) {
-          this.$router.push("index");
-        }
       });
     }
   }
