@@ -1,10 +1,11 @@
 import axios from "axios";
-import QS from "qs";
+import base from "@/api/base";
 
 axios.defaults.headers["Content-type"] = "application/json;charset=utf-8";
 
 // 创建axios实例
 const serivce = axios.create({
+  baseURL: base.dev,
   timeout: 10000
 });
 

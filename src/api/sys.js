@@ -1,9 +1,10 @@
-import base from "./base";
-import axios from "@/utils/http";
+import request from "@/utils/http";
 
 // 查询用户
-export function list(query){
+export function list(query) {
   return request({
-    url: ""
-  })
+    url: "/sys/user",
+    method: "get",
+    params: query
+  });
 }
