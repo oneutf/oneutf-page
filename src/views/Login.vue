@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import { list } from "@/api/sys";
 export default {
   data() {
     return {
@@ -27,11 +26,7 @@ export default {
       }
     };
   },
-  created() {
-    list().then(res => {
-      console.log(res);
-    });
-  },
+  created() {},
   methods: {
     login() {
       console.log("==");

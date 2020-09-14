@@ -13,10 +13,9 @@ const serivce = axios.create({
 serivce.interceptors.response.use(
   res => {
     console.log(res);
-    return res;
+    return res.data;
   },
   error => {
-    console.log(error);
     Promise.reject(error);
   }
 );
