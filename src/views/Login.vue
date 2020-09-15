@@ -28,9 +28,7 @@ export default {
   },
   created() {},
   methods: {
-    login() {
-      console.log("==");
-    }
+    login() {}
   }
 };
 </script>
