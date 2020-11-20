@@ -2,6 +2,19 @@
   {
     "name": "系统管理",
     "code": "system-manage",
-    "children": []
+    "children": [
+      {
+        "name": "用户管理",
+        "code": "user-manage"
+      },
+      {
+        "name": "角色管理",
+        "code": "role-manage"
+      },
+      {
+        "name": "日志管理",
+        "code": "log-manage"
+      }
+    ]
   }
 ]

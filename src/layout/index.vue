@@ -1,11 +1,14 @@
 <template>
   <div class="layout-index">
     <el-row>
-      <span>top</span>
+      <nav-bar />
     </el-row>
     <el-row>
-      <el-col :lg="4">
+      <el-col :lg="3">
         <menu-bar />
+      </el-col>
+      <el-col :lg="21">
+        <tags-view />
       </el-col>
     </el-row>
   </div>
@@ -13,12 +16,14 @@
 
 <script>
 import MenuBar from "@/layout/MenuBar";
+import NavBar from "@/layout/NavBar";
+import TagsView from "@/layout/TagsView";
 export default {
-  created() {
-    console.log("object");
-  },
+  created() {},
   components: {
-    MenuBar
+    MenuBar,
+    NavBar,
+    TagsView
   }
 };
 </script>
