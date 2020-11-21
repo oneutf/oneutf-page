@@ -2,10 +2,13 @@
   {
     "name": "系统管理",
     "code": "system-manage",
+    "routerPath": "system",
     "children": [
       {
         "name": "用户管理",
-        "code": "user-manage"
+        "code": "user-manage",
+        "routerPath": "user",
+        "component": "system/user"
       },
       {
         "name": "角色管理",
