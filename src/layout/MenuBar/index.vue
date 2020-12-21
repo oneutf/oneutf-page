@@ -1,7 +1,7 @@
 <template>
   <div class="menu-bar-index">
     <el-menu default-active="activeMenu">
-      <el-submenu index="item.code" v-for="item in list" :key="item.code">
+      <el-submenu :index="item.code" v-for="item in list" :key="item.code">
         <template slot="title">{{ item.name }}</template>
         <el-menu-item
           :index="childrenItem.code"

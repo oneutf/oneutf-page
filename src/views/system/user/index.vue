@@ -1,6 +1,6 @@
 <template>
   <div class="sys-user-index">
-    这是用户页面
+    32132
   </div>
 </template>
 
