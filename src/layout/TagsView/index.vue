@@ -1,13 +1,8 @@
 <template>
   <div class="tags-view-index">
-    <el-tabs
-      type="card"
-      closable
-      @tab-remove="removeTab"
-      @tab-click="clickTab($event)"
-    >
+    <el-tabs type="card" closable @tab-remove="tabRemove">
       <el-tab-pane
-        v-for="item in editableTabs"
+        v-for="item in tabs"
         :key="item.name"
         :label="item.title"
         :name="item.name"
@@ -22,7 +17,7 @@
 export default {
   data() {
     return {
-      editableTabs: [
+      tabs: [
         {
           title: "Tab 1",
           name: "name1",
@@ -38,9 +33,8 @@ export default {
     };
   },
   methods: {
-    removeTab() {},
-    clickTab(e) {
-      console.log(e.name);
+    tabRemove(e) {
+      this.tabs = this.tabs.filter(item => item.name != e);
     }
   }
 };

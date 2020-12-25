@@ -4,9 +4,10 @@
       <el-submenu :index="item.code" v-for="item in list" :key="item.code">
         <template slot="title">{{ item.name }}</template>
         <el-menu-item
-          :index="childrenItem.code"
           v-for="childrenItem in item.children"
+          :index="childrenItem.code"
           :key="childrenItem.code"
+          @click="menuClick(childrenItem)"
           >{{ childrenItem.name }}</el-menu-item
         >
       </el-submenu>
@@ -25,6 +26,11 @@ export default {
   created() {
     let menuJson = require("@/assets/menu/menu.json");
     this.list = menuJson;
+  },
+  methods: {
+    menuClick(e) {
+      console.log(e);
+    }
   }
 };
 </script>
